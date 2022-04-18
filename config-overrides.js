@@ -1,5 +1,5 @@
 module.exports = {
-  webpack: (config, env) => {
+  webpack: (config) => {
     config.optimization.runtimeChunk = false;
     config.optimization.splitChunks = {
       cacheGroups: {
@@ -10,5 +10,5 @@ module.exports = {
     config.plugins[5].options.filename = "static/css/[name].css";
     config.plugins[5].options.moduleFilename = () => "static/css/main.css";
     return config;
-  },
+  }
 };
