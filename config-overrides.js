@@ -9,6 +9,11 @@ module.exports = {
     config.output.filename = "static/js/[name].js";
     config.plugins[5].options.filename = "static/css/[name].css";
     config.plugins[5].options.moduleFilename = () => "static/css/main.css";
+    config.externals = {
+      react: "React",
+      "react-dom": "ReactDOM",
+      "ui-infra": "UIInfra"
+    }
     return config;
   }
 };

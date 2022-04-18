@@ -1,12 +1,18 @@
 import React from "react";
-import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+import { Button } from 'ui-infra';
 
-const Count = (props) => (
+const Counter = (props) => (
   <div>
     The count is {props.count}
-    <button onClick={props.increment}>increment</button>
-    <button onClick={props.incrementAsync}>incrementAsync</button>
+    <Button onClick={props.increment}>increment</Button>
+    <Button onClick={props.incrementAsync}>incrementAsync</Button>
   </div>
 );
 
-export default Count;
+Counter.propTypes = {
+  increment: PropTypes.func.isRequired,
+  incrementAsync: PropTypes.func.isRequired,
+};
+
+export default Counter;
