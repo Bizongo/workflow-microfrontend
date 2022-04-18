@@ -17,7 +17,7 @@ window.unmountWorkflows = containerId => {
   root.unmount();
 };
 
-if (!document.getElementById('workflow-container')) {
+if (!document.getElementById('Workflows-container')) {
   const container = document.getElementById('root');
   const root = createRoot(container); // createRoot(container!) if you use TypeScript
   root.render(<Provider store={store}><App /></Provider>);
