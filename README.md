@@ -33,7 +33,7 @@ Your app is ready to be deployed!
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**\
 Ejects all the create-react-app and react rewired configurations.
 
 ## Libraries
